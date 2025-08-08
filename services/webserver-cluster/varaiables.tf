@@ -40,3 +40,9 @@ variable "custom_tags" {
   type        = map(string)
   default     = {}
 }
+
+variable "enable_autoscaling" {
+  description = "Enable or disable autoscaling for the web server cluster"
+  type        = bool
+}
+
