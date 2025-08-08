@@ -34,3 +34,9 @@ variable "server_port" {
   type        = number
   default     = 8080
 }
+
+variable "custom_tags" {
+  description = "Custom tags to apply to the web server cluster resources"
+  type        = map(string)
+  default     = {}
+}
